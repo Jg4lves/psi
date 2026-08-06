@@ -1,0 +1,165 @@
+.botanical-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.botanical-bg svg {
+  position: absolute;
+  transform-origin: center;
+  animation: floatLeaf 18s ease-in-out infinite;
+}
+@keyframes floatLeaf {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+.bot-1 {
+  top: -10%;
+  right: -8%;
+  width: 42vw;
+  min-width: 420px;
+  opacity: 0.5;
+}
+
+.bot-2 {
+  bottom: -12%;
+  left: -8%;
+  width: 32vw;
+  min-width: 320px;
+  opacity: 0.5;
+  transform: scaleX(-1);
+}
+
+.bot-3 {
+  top: 24%;
+  left: 4%;
+  width: 13vw;
+  min-width: 130px;
+  opacity: 0.5;
+}
+
+.bot-4 {
+  bottom: 14%;
+  right: 6%;
+  width: 11vw;
+  min-width: 110px;
+  opacity: 0.5;
+}
+
+.bot-5 {
+  top: 8%;
+  left: 30%;
+  width: 7vw;
+  min-width: 80px;
+  opacity: 0.5;
+  transform: rotate(-18deg);
+}
+
+.bot-6 {
+  bottom: 18%;
+  left: 36%;
+  width: 6vw;
+  min-width: 75px;
+  opacity: 0.5;
+  transform: rotate(14deg);
+}
+
+.bot-7 {
+  top: 48%;
+  right: 18%;
+  width: 6vw;
+  min-width: 72px;
+  opacity: 0.5;
+  transform: rotate(-12deg);
+}
+
+.bot-8 {
+  top: 68%;
+  left: 16%;
+  width: 5.5vw;
+  min-width: 65px;
+  opacity: 0.5;
+  transform: rotate(24deg);
+}
+.bot-1 {
+  animation-duration: 22s;
+}
+
+.bot-2 {
+  animation-duration: 18s;
+  animation-delay: -4s;
+}
+
+.bot-3 {
+  animation-duration: 15s;
+  animation-delay: -7s;
+}
+
+.bot-4 {
+  animation-duration: 20s;
+  animation-delay: -3s;
+}
+
+.bot-5 {
+  animation-duration: 16s;
+  animation-delay: -10s;
+}
+
+.bot-6 {
+  animation-duration: 24s;
+  animation-delay: -6s;
+}
+
+.bot-7 {
+  animation-duration: 19s;
+  animation-delay: -12s;
+}
+
+.bot-8 {
+  animation-duration: 26s;
+  animation-delay: -8s;
+}
+.blob {
+  position: absolute;
+  z-index: 0;
+  filter: blur(0px);
+  pointer-events: none;
+}
+.blob-1 {
+  width: 900px;
+  height: 900px;
+  right: -18%;
+  top: -8%;
+  opacity: 0.75;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.6),
+    rgba(233, 197, 190, 0.55) 55%,
+    rgba(233, 197, 190, 0) 78%
+  );
+  border-radius: 44% 56% 62% 38% / 48% 42% 58% 52%;
+}
+.background {
+  position: fixed;
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  background:
+    radial-gradient(ellipse 70% 60% at 85% 15%, rgba(227, 178, 172, 0.35), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(220, 195, 154, 0.18), transparent 60%),
+    linear-gradient(160deg, #fdf6f4 0%, #faeae6 45%, #f6e2dc 100%);
+}
