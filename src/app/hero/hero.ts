@@ -1,23 +1,13 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Hero } from './hero.spec';
+import { Component } from '@angular/core';
 
-describe('Hero', () => {
-  let component: Hero;
-  let fixture: ComponentFixture<Hero>;
+@Component({
+  selector: 'hero',
+  standalone: true,
+  imports: [],
+  templateUrl: './hero.html',
+  styleUrl: './hero.css'
+})
+export class Hero {
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Hero]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(Hero);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+}

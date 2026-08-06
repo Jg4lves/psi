@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-@Component({
-  selector: 'app-hero',
-  imports: [],
-  templateUrl: './hero.html',
-  styleUrl: './hero.css'
-})
-export class Hero {
+import { Hero } from './hero';
 
-}
+describe('Hero', () => {
+  let component: Hero;
+  let fixture: ComponentFixture<Hero>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [Hero]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(Hero);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
