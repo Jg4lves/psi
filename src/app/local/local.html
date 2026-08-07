@@ -1,0 +1,125 @@
+<section class="appointment-section" id="atendimento" #appointmentSection>
+  <div class="appointment-container" [class.is-visible]="sectionVisible">
+    <div class="appointment-header">
+      <span class="section-badge">Formas de atendimento</span>
+      <h2 class="appointment-title">Escolha o Cuidado que Cabe na Sua Rotina</h2>
+      <p class="appointment-subtitle">
+        Seja presencialmente ou pela praticidade do atendimento online, você recebe o mesmo cuidado
+        acolhedor e personalizado.
+      </p>
+    </div>
+
+    <div class="appointment-cards">
+      <div class="appointment-card">
+        <div class="appointment-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2a7 7 0 0 1 7 7.5C19 14.8 12 21 12 21Z" />
+            <circle cx="12" cy="9.5" r="2.5" />
+          </svg>
+        </div>
+
+        <h3>Atendimento Presencial</h3>
+        <p class="appointment-desc">
+          Sessões em um ambiente clínico privativo, confortável e acolhedor, pensado para oferecer
+          segurança, sigilo e tranquilidade durante toda a sua jornada terapêutica.
+        </p>
+
+        <ul class="appointment-features">
+          <li>Consultório privativo e confortável</li>
+          <li>Ambiente calmo e acolhedor</li>
+          <li>Localização de fácil acesso</li>
+          <li>Sessões seguras e sigilosas</li>
+        </ul>
+
+        <a href="#localizacao" class="appointment-btn appointment-btn-outline"> Ver Localização </a>
+      </div>
+
+      <div class="appointment-card">
+        <div class="appointment-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="4" width="14" height="10" rx="2" />
+            <path d="M16 8.5 22 6v8l-6-2.5" />
+            <path d="M2 18h14" />
+          </svg>
+        </div>
+
+        <h3>Terapia Online</h3>
+        <p class="appointment-desc">
+          Receba acompanhamento psicológico profissional no conforto da sua casa, por videochamada
+          segura, com a mesma qualidade, ética e sigilo do atendimento presencial.
+        </p>
+
+        <ul class="appointment-features">
+          <li>Atenda de qualquer lugar</li>
+          <li>Horários flexíveis</li>
+          <li>Sem deslocamento</li>
+          <li>Videochamadas seguras e sigilosas</li>
+        </ul>
+
+        <a href="#" class="appointment-btn appointment-btn-filled"> Agendar Online </a>
+      </div>
+    </div>
+
+    <div class="space-block" id="localizacao">
+      <div class="space-header">
+        <span class="section-badge">Conheça o espaço</span>
+        <h3 class="space-title">Um Ambiente Pensado para o Seu Conforto</h3>
+      </div>
+
+      <div class="space-gallery">
+        <figure class="space-photo">
+          <img src="espera.jpeg" alt="Sala de espera do consultório" />
+          <figcaption>Sala de espera</figcaption>
+        </figure>
+
+        <figure class="space-photo">
+          <img src="atendimento.jpeg" alt="Sala de atendimento do consultório" />
+          <figcaption>Sala de atendimento</figcaption>
+        </figure>
+      </div>
+
+      <p class="space-caption">
+        Um espaço acolhedor, preparado com cuidado para oferecer conforto, privacidade e segurança
+        para o seu bem-estar emocional.
+      </p>
+    </div>
+
+    <div class="appointment-cta">
+      <h3>Pronto para Dar o Primeiro Passo?</h3>
+      <p>
+        Agende sua primeira sessão e comece sua jornada em direção a mais equilíbrio emocional,
+        autoconhecimento e qualidade de vida.
+      </p>
+      <a
+        href="https://wa.me/55XXXXXXXXXXX"
+        target="_blank"
+        rel="noopener"
+        class="appointment-cta-btn"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.9 9.9 0 0 0 4.62 1.14h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2Zm5.8 14.1c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.03.24-3.42-.71-2.9-1.16-4.76-4.12-4.9-4.31-.14-.19-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.29.58-.36.77-.36.19 0 .39 0 .55.01.18.01.42-.07.66.5.24.58.83 2 .9 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.3.38-.43.51-.14.14-.29.29-.13.57.17.29.75 1.24 1.6 2.01 1.1.99 2.03 1.29 2.31 1.44.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.12.07.68-.17 1.36Z"
+          />
+        </svg>
+        Agendar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="floral-decor floral-1"></div>
+  <div class="floral-decor floral-2"></div>
+</section>
