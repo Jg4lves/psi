@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Hero } from './hero/hero';
 import { Background } from './shared/background/background';
+import { Identificacao } from './identificacao/identificacao';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Hero, Background],
+  imports: [Hero, Background, Identificacao],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
