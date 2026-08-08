@@ -1,118 +1,61 @@
-<section class="instagram-section" #instagramSection>
-  <div class="instagram-container" [class.is-visible]="igVisible">
+<div class="instagram-grid">
 
-    <div class="instagram-grid">
-
-      <div class="instagram-mockup-col">
-        <div class="phone-mockup">
-          <div class="phone-notch"></div>
-
-          <div class="phone-screen">
-
-            <div class="ig-profile-header">
-              <div class="ig-avatar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="8" r="4" />
-                  <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" />
-                </svg>
-              </div>
-              <div class="ig-profile-info">
-                <span class="ig-name">psicologa.consultorio</span>
-                <div class="ig-stats">
-                  <div><strong>320</strong><span>posts</span></div>
-                  <div><strong>12.4k</strong><span>seguidores</span></div>
-                  <div><strong>580</strong><span>seguindo</span></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="ig-bio">
-              <p><strong>Psicóloga Clínica · CRP</strong></p>
-              <p>Saúde mental, autoconhecimento e bem-estar emocional 🌿</p>
-            </div>
-
-            <div class="ig-feed">
-              <div class="ig-post ig-post-1">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 12h4l2-7 4 14 3-9 2 5h5" />
-                </svg>
-              </div>
-              <div class="ig-post ig-post-2">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="8" r="4" />
-                  <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7" />
-                </svg>
-              </div>
-              <div class="ig-post ig-post-3">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2C9 6 6 10 6 14a6 6 0 0 0 12 0c0-4-3-8-6-12z" />
-                </svg>
-              </div>
-              <div class="ig-post ig-post-4">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="8" cy="9" r="3" />
-                  <circle cx="16" cy="9" r="3" />
-                  <path d="M2 20c0-3 2.7-5 6-5s6 2 6 5M12 20c0-3 2.7-5 6-5s4 2 4 5" />
-                </svg>
-              </div>
-              <div class="ig-post ig-post-5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 7v5l3 3" />
-                </svg>
-              </div>
-              <div class="ig-post ig-post-6">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20.8 4.6a5 5 0 0 0-7.1 0L12 6.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 20.3l8.8-8.6a5 5 0 0 0 0-7.1Z" />
-                </svg>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="instagram-content-col">
-        <span class="section-badge">Siga no Instagram</span>
-        <h2 class="instagram-title">Conteúdo Diário para Apoiar Seu Bem-Estar Emocional</h2>
-        <p class="instagram-desc">
-          No Instagram, compartilho reflexões, dicas práticas e orientações
-          psicológicas baseadas em evidências para te ajudar a compreender
-          melhor suas emoções, fortalecer sua saúde mental e desenvolver
-          mais autoconhecimento.
-        </p>
-
-        <ul class="instagram-benefits">
-          <li>Dicas de saúde mental</li>
-          <li>Manejo de ansiedade e estresse</li>
-          <li>Autoestima e equilíbrio emocional</li>
-          <li>Relacionamentos saudáveis</li>
-          <li>Autocuidado e crescimento pessoal</li>
-          <li>Conteúdo educativo em psicologia</li>
-        </ul>
-
-        <a href="https://instagram.com/seuperfil" target="_blank" rel="noopener" class="instagram-btn">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77a4.9 4.9 0 0 1 1.77-1.15c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.4-8.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0Z"/>
-          </svg>
-          Seguir no Instagram
-        </a>
-
-        <p class="instagram-secondary">
-          Junte-se a uma comunidade que cresce todos os dias em busca de
-          mais equilíbrio emocional.
-        </p>
-
-        <div class="instagram-proof">
-          <span class="proof-item">@seuperfil</span>
-          <span class="proof-dot">•</span>
-          <span class="proof-item">Conteúdo novo toda semana</span>
-        </div>
-      </div>
-
-    </div>
+  <div class="instagram-posts">
+    <a href="https://www.instagram.com/p/DafqgURx-uo/" target="_blank" rel="noopener" class="instagram-post">
+      <img src="post1.jpeg" alt="Conteúdo sobre saúde emocional">
+    </a>
+    <a href="https://www.instagram.com/p/DZ3Di_svkgF/" target="_blank" rel="noopener" class="instagram-post">
+      <img src="post2.jpeg" alt="Conteúdo sobre ansiedade e bem-estar">
+    </a>
+    <a href="https://www.instagram.com/p/DYzSL-2RHw5/" target="_blank" rel="noopener" class="instagram-post">
+      <img src="post3.jpeg" alt="Reflexão sobre autoconhecimento">
+    </a>
+    <a href="https://www.instagram.com/p/DUicnCxjYa0/" target="_blank" rel="noopener" class="instagram-post">
+      <img src="post4.jpeg" alt="Conteúdo sobre autoestima">
+    </a>
+    <a href="https://www.instagram.com/p/DYBJbEuDWS6/" target="_blank" rel="noopener" class="instagram-post">
+      <img src="post5.jpeg" alt="Conteúdo sobre saúde mental">
+    </a>
+    <a href="https://www.instagram.com/p/DRevCu5Ddp7/" target="_blank" rel="noopener" class="instagram-post">
+      <img src="post6.jpeg" alt="Conteúdo sobre psicologia">
+    </a>
   </div>
 
-  <div class="floral-decor floral-1"></div>
-  <div class="floral-decor floral-2"></div>
-</section>
+  <div class="instagram-content-col">
+
+    <span class="section-badge">Siga no Instagram</span>
+
+    <h2 class="instagram-title">
+      Conteúdos para cuidar da sua saúde emocional
+    </h2>
+
+    <p class="instagram-desc">
+      No Instagram, compartilho reflexões e conteúdos sobre saúde mental,
+      autoconhecimento e bem-estar emocional para acompanhar você também
+      fora do consultório.
+    </p>
+
+    <div class="instagram-profile">
+      <div class="instagram-profile-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+        </svg>
+      </div>
+      <div>
+        <strong>@psielainesousa</strong>
+        <span>Psicóloga Clínica</span>
+      </div>
+    </div>
+
+    <a href="https://www.instagram.com/psielainesousa" target="_blank" rel="noopener" class="instagram-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77a4.9 4.9 0 0 1 1.77-1.15c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.4-8.4a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1-2.34 0Z"/>
+      </svg>
+      Conheça meu Instagram
+    </a>
+
+  </div>
+
+</div>
