@@ -8,14 +8,6 @@
   gap: 90px;                  /* igual ao .about-grid */
 }
 
-@media (max-width: 860px) {
-  .instagram-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;                /* igual ao .about-grid no mobile */
-    text-align: center;
-  }
-}
-
 /* Grade de posts */
 .instagram-posts {
   display: grid;
@@ -64,14 +56,6 @@
   border-radius: 24px;
   padding: 40px 32px;         /* entre o padding do quote (32px) e o da section */
   box-shadow: 0 30px 60px rgba(180, 120, 105, 0.22);
-}
-
-@media (max-width: 860px) {
-  .instagram-content-col {
-    max-width: 100%;
-    align-items: center;
-    padding: 32px 24px;
-  }
 }
 
 .section-badge {
@@ -167,4 +151,264 @@
 .instagram-btn svg {
   width: 22px;                /* igual ao .approach-icon svg */
   height: 22px;
+}
+
+.instagram-grid {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 90px;
+}
+
+@media (max-width: 860px) {
+  .instagram-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+/* Grade de posts */
+.instagram-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 30px 60px rgba(180, 120, 105, 0.22);
+}
+
+.instagram-post {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 16px;
+  display: block;
+  background: #f5e9eb;
+  box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.15);
+}
+
+.instagram-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.instagram-post:hover img {
+  transform: scale(1.05);
+}
+
+/* Coluna de texto */
+.instagram-content-col {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 40px 32px;
+  box-shadow: 0 30px 60px rgba(180, 120, 105, 0.22);
+}
+
+@media (max-width: 860px) {
+  .instagram-content-col {
+    max-width: 100%;
+    align-items: center;
+    padding: 32px 24px;
+  }
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #a8564c;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(180, 120, 105, 0.25);
+}
+
+.instagram-title {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: #3d3230;
+  margin: 24px 0 24px;
+}
+
+.instagram-desc {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #766763;
+  margin: 0 0 28px;
+}
+
+.instagram-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+
+.instagram-profile-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(227, 178, 172, 0.4), rgba(220, 195, 154, 0.35));
+  color: #a8564c;
+}
+
+.instagram-profile-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.instagram-profile strong,
+.instagram-profile span {
+  display: block;
+  color: #3d3230;
+}
+
+.instagram-profile strong {
+  font-size: 1rem;
+}
+
+.instagram-profile span {
+  margin-top: 4px;
+  font-size: 0.92rem;
+  color: #766763;
+}
+
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c98b7f, #a8564c);
+  box-shadow: 0 12px 24px -10px rgba(168, 86, 76, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px -10px rgba(168, 86, 76, 0.6);
+}
+
+.instagram-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 600px) {
+
+  .instagram-grid {
+    gap: 24px;
+    padding-top: 25px;
+  }
+
+  .instagram-content-col {
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .section-badge {
+    padding: 8px 14px;
+    font-size: 0.72rem;
+  }
+
+  .instagram-title {
+    font-size: 1.5rem;
+    margin: 16px 0 12px;
+  }
+
+  .instagram-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .instagram-profile {
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 10px 14px;
+  }
+
+  .instagram-profile-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+
+  .instagram-profile-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .instagram-profile strong {
+    font-size: 0.88rem;
+  }
+
+  .instagram-profile span {
+    font-size: 0.8rem;
+  }
+
+  /* Botão menor */
+  .instagram-btn {
+    width: auto;             /* deixa de ocupar 100% */
+    display: inline-flex;
+    padding: 11px 20px;
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+
+  .instagram-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Remove os posts do Instagram no mobile — mantém só texto + CTA */
+  .instagram-posts {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .instagram-content-col {
+    padding: 22px 16px;
+  }
+
+  .instagram-title {
+    font-size: 1.4rem;
+  }
+
+  .instagram-desc {
+    font-size: 0.88rem;
+  }
 }
