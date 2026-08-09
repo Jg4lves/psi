@@ -30,21 +30,6 @@
   gap: 40px;
 }
 
-@media (max-width: 780px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    text-align: center;
-  }
-}
-
 .footer-col-title {
   font-size: 1rem;
   font-weight: 600;
@@ -69,14 +54,6 @@
   color: rgba(255, 255, 255, 0.78);
 }
 
-@media (max-width: 600px) {
-  .footer-tagline {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .footer-crp-badge {
   margin-bottom: 14px;
 }
@@ -96,12 +73,6 @@
 .footer-social {
   display: flex;
   gap: 12px;
-}
-
-@media (max-width: 600px) {
-  .footer-social {
-    justify-content: center;
-  }
 }
 
 .footer-social-icon {
@@ -167,12 +138,6 @@
   gap: 12px;
 }
 
-@media (max-width: 600px) {
-  .footer-contact li {
-    justify-content: center;
-  }
-}
-
 .footer-contact svg {
   width: 20px;
   height: 20px;
@@ -203,13 +168,6 @@
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-}
-
-@media (max-width: 600px) {
-  .footer-bottom-inner {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 .footer-copy {
@@ -260,4 +218,146 @@
 .back-to-top svg {
   width: 22px;
   height: 22px;
+}
+
+@media (max-width: 780px) {
+  .footer-top {
+    padding: 36px 0 24px;
+  }
+
+  /* Remove a coluna de Navegação (2ª coluna do grid) */
+  .footer-grid > .footer-col:nth-child(2) {
+    display: none;
+  }
+
+  /* Sobrando Marca + Contato: 2 colunas */
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 28px;
+  }
+
+  .footer-tagline {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    border-radius: 18px 18px 0 0;
+    margin-top: 24px;
+  }
+
+  .footer-top {
+    padding: 28px 0 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer-col-title {
+    font-size: 0.92rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-tagline {
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin: 0 auto 12px;
+    max-width: 260px;
+  }
+
+  .footer-crp-badge {
+    margin-bottom: 12px;
+  }
+
+  .badge-crp {
+    padding: 6px 13px;
+    font-size: 0.7rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-social-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+  }
+
+  .footer-social-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-contact {
+    gap: 10px;
+  }
+
+  .footer-contact li {
+    justify-content: center;
+  }
+
+  .footer-contact a,
+  .footer-contact span {
+    font-size: 0.85rem;
+  }
+
+  .footer-contact svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  /* Base */
+  .footer-bottom {
+    padding: 14px 0;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-copy {
+    font-size: 0.72rem;
+  }
+
+  .footer-legal {
+    gap: 16px;
+    font-size: 0.72rem;
+  }
+
+  /* Botão voltar ao topo — um pouco menor no mobile */
+  .back-to-top {
+    width: 42px;
+    height: 42px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .back-to-top svg {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-tagline {
+    max-width: 220px;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 6px;
+  }
 }
